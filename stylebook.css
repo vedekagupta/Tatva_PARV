@@ -1,0 +1,150 @@
+body, h1, h2, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF6E3; 
+    color: #2A3663; 
+}
+
+/* Navigation bar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54473F; 
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-size: 1.95rem;
+    color: #FAF6E3;
+    text-shadow: 2px 2px 6px #2A3663;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.07rem;
+    color: #FAF6E3;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #D8DBBD; 
+}
+
+
+/* Shlok Section */
+.shlok {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #dbcfbd, #B59F78);
+    color: #2A3663;
+}
+.shlok img {
+    width: 15%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.shlok img {
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.shlok img {
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Visual Chart Section */
+.visual-chart {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #dbcfbd, #B59F78); 
+}
+
+.visual-chart img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Ancient Books Section */
+.ancient-books h2 {
+    text-align: center;
+    color: #2A3663;
+    margin-bottom: 2px;
+}
+
+.book-category {
+    margin: 30px 0;
+    margin-right: 30px;
+}
+
+.book-category h3 {
+    margin-left: 20px;
+    color: #2A3663;
+}
+
+.book-section {
+    display: grid;
+    justify-content: center;
+    gap: 10px;  
+}
+
+.book-section img {
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #D8DBBD;
+    object-fit: cover;
+}
+
+.book-section p {
+    text-align: justify;
+    margin: 0 auto;
+    color: #2A3663;
+    display: inline-flexbox;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.book-section {    
+    background-color: #FAF6E3;
+    border: 1px solid #B59F78;
+    border-radius: 10px;
+    width: 85%;
+    margin: 100px;
+    
+    padding: 10px;
+    transition: transform 0.4s ease;
+}
+
+.book-section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2A3663;
+    color: #FAF6E3;
+    font-size: 0.9rem;
+}

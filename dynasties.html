@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynasties - Sanskrit Heritage</title>
+    <link rel="stylesheet" href="styledynasties.css"> <!--linked css file of home page for styling-->
+</head>
+<body>
+    <!--Navigation bar-->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Tatva</h1> <!--logo named as S.H.-->
+        </div>
+        <!--linked other pages on top button and named them-->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ancient-books.html">Ancient Books</a></li>
+                <li><a href="rishis-munis.html">Rishis and Munis</a></li>
+                <li><a href="dynasties.html">Dynasties</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="loginmain.html">Research</a></li>               
+            </ul>
+        </nav>
+        
+        <!-- Code for Multi Language using Google Translate-->
+        <div id="google_element">      
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+            <script>
+                function loadGoogleTranslate (){
+                    new google.translate.TranslateElement ("google_element");
+                }
+            </script>
+        </div>
+      
+    </header>
+    
+    <main>
+        <section class="scriptures-section">
+            <h1>Division of Scriptures in Historical Context</h1>
+            <p>Our ancient scriptures, such as the Vedas, Puranas, and Upanishads, are divided into Shruti and Smriti categories. These divisions reflect the oral traditions and written records that shaped Indian philosophy and history.</p>
+        
+            <div class="carousel">
+                <div class="carousel-content">
+                    <div class="carousel-item">
+                        <h2>Shruti</h2>
+                        <p>Shruti refers to the body of sacred texts that are considered to be heard and transmitted verbally from generation to generation. This includes the Vedas and the Upanishads.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Smriti</h2>
+                        <p>Smriti encompasses a vast range of texts including the Puranas, Itihasas, Dharma Shastras, and more, which are remembered and written down by sages.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Vedas</h2>
+                        <p>The Vedas are the oldest and most authoritative scriptures of Hinduism, consisting of Rigveda, Samaveda, Yajurveda, and Atharvaveda.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Puranas</h2>
+                        <p>The Puranas are ancient Hindu texts that narrate the history of the universe from creation to destruction, genealogies of kings, heroes, sages, and deities.</p>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-button" onclick="previousSlide()">&lt;</button>
+                    <button class="carousel-button" onclick="nextSlide()">&gt;</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="timeline-section">
+            <h2>Dynasties Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item" onclick="showDynastyDetail('mauryan')">
+                    <h3>Mauryan Dynasty</h3>
+                    <p>(322–185 BCE)</p>
+                </div>
+                <div class="timeline-item" onclick="showDynastyDetail('gupta')">
+                    <h3>Gupta Dynasty</h3>
+                    <p>(320–550 CE)</p>
+                </div>
+                <div class="timeline-item" onclick="showDynastyDetail('mughal')">
+                    <h3>Mughal Dynasty</h3>
+                    <p>(1526–1857 CE)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dynasty-detail">
+            <!-- Dynamic content will be injected here by JavaScript -->
+        </section>
+
+            <section class="dynasty-king">
+                <h2 style="text-align: center; color: #2A3663;">Kings and Dynasties</h2>
+                <div class="dynasty">
+                    <img src="king1.jpg" alt="King 1">
+                    <div class="dynasty-details">
+                        <h3>King Ashoka - Maurya Dynasty</h3>
+                        <p>King Ashoka, one of the greatest emperors of India, ruled the Maurya Dynasty. He is known for his role in spreading Buddhism and his edicts inscribed on rocks and pillars across the Indian subcontinent.</p>
+                    </div>
+                </div>
+                <div class="dynasty">
+                    <img src="king2.jpg" alt="King 2">
+                    <div class="dynasty-details">
+                        <h3>King Chandragupta - Gupta Dynasty</h3>
+                        <p>Chandragupta I was a pivotal figure in Indian history, founding the Gupta Empire, which ushered in a golden age of cultural and scientific achievements.</p>
+                    </div>
+                </div>
+                <div class="dynasty">
+                    <img src="king3.jpg" alt="King 3">
+                    <div class="dynasty-details">
+                        <h3>King Harsha - Vardhana Dynasty</h3>
+                        <p>King Harsha ruled Northern India during the early 7th century and was known for his administrative efficiency and the promotion of arts and culture.</p>
+                    </div>
+                </div>
+            </section>
+            <!--written about each great king in detail-->
+        
+
+    </main>
+
+    <script>
+        function showDynastyDetail(dynasty) {
+            const dynastyDetail = document.getElementById('dynasty-detail');
+            let content = '';
+
+            switch (dynasty) {
+                case 'mauryan':
+                    content = `
+                        <h2>Mauryan Dynasty</h2>
+                        <img src="images/mauryan.jpg" alt="Mauryan Dynasty">
+                        <p>The Mauryan dynasty was founded by Chandragupta Maurya, encompassing one of the largest empires in Indian history. Ashoka, the most notable ruler, embraced Buddhism and propagated peace after the Kalinga War.</p>
+                        <p><a href="https://en.wikipedia.org/wiki/Maurya_Empire" target="_blank">Learn more</a></p>
+                    `;
+                    break;
+                case 'gupta':
+                    content = `
+                        <h2>Gupta Dynasty</h2>
+                        <img src="images/gupta.jpg" alt="Gupta Dynasty">
+                        <p>The Gupta dynasty marked the Golden Age of India, with significant advancements in arts, science, and political governance. Chandragupta I and Samudragupta were prominent rulers.</p>
+                        <p><a href="https://en.wikipedia.org/wiki/Gupta_Empire" target="_blank">Learn more</a></p>
+                    `;
+                    break;
+                case 'mughal':
+                    content = `
+                        <h2>Mughal Dynasty</h2>
+                        <img src="images/mughal.jpg" alt="Mughal Dynasty">
+                        <p>The Mughal Empire was known for its cultural contributions and monumental architecture, including the Taj Mahal. Akbar and Aurangzeb were notable rulers who left a lasting legacy.</p>
+                        <p><a href="https://en.wikipedia.org/wiki/Mughal_Empire" target="_blank">Learn more</a></p>
+                    `;
+                    break;
+                default:
+                    content = `<p>Click on a dynasty to view details.</p>`;
+            }
+
+            dynastyDetail.innerHTML = content;
+        }
+
+        //corousal 
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const carouselContent = document.querySelector('.carousel-content');
+            carouselContent.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            const items = document.querySelectorAll('.carousel-item');
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateCarousel();
+        }
+
+        function previousSlide() {
+            const items = document.querySelectorAll('.carousel-item');
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = items.length - 1;
+            }
+            updateCarousel();
+        }
+    </script>
+</body>
+</html>

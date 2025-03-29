@@ -1,0 +1,177 @@
+
+/*body {
+    font-family: 'Georgia', serif;
+    background-color: #FAF6E3;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #2A3663;
+    padding: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #FAF6E3;
+    text-decoration: none;
+    font-weight: bold;
+}
+*/
+
+body, h1, h2, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF6E3; 
+    color: #2A3663; 
+}
+
+/* Navigation bar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54473F;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: #FAF6E3;
+    text-shadow: 2px 2px 6px #2A3663;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF6E3;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #D8DBBD; 
+}
+
+
+.scriptures-section, .timeline-section, #dynasty-detail {
+    padding: 20px;
+    margin: 20px;
+    background-color: #D8DBBD;
+    border-radius: 8px;
+}
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.timeline-item {
+    background-color: #B59F78;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+}
+.timeline-item:hover {
+    background-color: #2A3663;
+    color: #FAF6E3;
+}
+#dynasty-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+#dynasty-detail p {
+    margin-top: 10px;
+}
+h1, h2 {
+    color: #2A3663;
+}
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #D8DBBD;
+    position: relative;
+}
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+.carousel-item h2 {
+    color: #2A3663;
+}
+.carousel-item p {
+    color: #B59F78;
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-button {
+    background-color: #2A3663;
+    color: #FAF6E3;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.dynasty {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #FAF6E3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dynasty img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.dynasty-details {
+    max-width: 800px;
+}
+.dynasty-details h3 {
+    margin: 0 0 10px;
+    color: #2A3663;
+}
+.dynasty-details p {
+    margin: 0;
+    color: #B59F78;
+}

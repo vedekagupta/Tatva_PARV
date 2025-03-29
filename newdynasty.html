@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynasties - Sanskrit Heritage</title>
+    <style>
+        body, h1, h2, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF6E3; 
+    color: #2A3663; 
+}
+
+/* Navigation bar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54473F;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: #FAF6E3;
+    text-shadow: 2px 2px 6px #2A3663;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF6E3;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #D8DBBD; 
+}
+
+
+
+
+
+
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f9f5f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #5a4233;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .carousel img {
+            max-height: 300px;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+        .carousel img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .content-section {
+            display: none;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .dynasties-section {
+            margin-top: 40px;
+        }
+        .dynasty {
+            display: flex;
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+        .dynasty img {
+            width: 150px;
+            height: auto;
+        }
+        .dynasty-details {
+            padding: 15px;
+        }
+        .dynasty-details h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #5a4233;
+        }
+        .scriptures {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .scriptures h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #5a4233;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation bar-->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Tatva</h1> <!--logo named as S.H.-->
+        </div>
+        <!--linked other pages on top button and named them-->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ancient-books.html">Ancient Books</a></li>
+                <li><a href="rishis-munis.html">Rishis and Munis</a></li>
+                <li><a href="dynasties.html">Dynasties</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="loginmain.html">Research</a></li>               
+            </ul>
+        </nav>
+        
+        <!-- Code for Multi Language using Google Translate-->
+        <div id="google_element">      
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+            <script>
+                function loadGoogleTranslate (){
+                    new google.translate.TranslateElement ("google_element");
+                }
+            </script>
+        </div>
+      
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>Dynasties - The Division of Scriptures</h1>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <img src="stoneage.jpg" alt="Stone Age" onclick="showContent('stone-age')">
+            <img src="vedicperiod.jpg" alt="Vedic Period" onclick="showContent('vedic-period')">
+            <img src="maurya.jpg" alt="Mauryan Dynasty" onclick="showContent('mauryan-dynasty')">
+            <img src="guptadynasty.jpg" alt="Gupta Empire" onclick="showContent('gupta-empire')">
+            <img src="modernera.jpg" alt="Modern Era" onclick="showContent('modern-era')">
+        </div>
+
+        <!-- Dynamic Content Section -->
+        <div id="content-section" class="content-section">
+            <h2 id="content-title">Select a period to explore</h2>
+            <p id="content-text">Click on a timeline image above to view more details about that period.</p>
+        </div>
+
+        <!-- Scriptures Division Section -->
+        <div class="scriptures">
+            <h2>Division of Scriptures</h2>
+            <p>Explore how our ancient scriptures are divided according to historical contexts.</p>
+            <!-- Add detailed descriptions and historical connections -->
+        </div>
+
+        <!-- Dynasties Section -->
+        <div class="dynasties-section">
+            <h2>Divine Indian Dynasties</h2>
+            <div class="dynasty">
+                <img src="maurya.jpg" alt="Dynasty Image">
+                <div class="dynasty-details">
+                    <h2>Dynasty Name</h2>
+                    <p>Details about the dynasty and its significant rulers.</p>
+                </div>
+            </div>
+            <!-- Repeat for more dynasties -->
+        </div>
+    </div>
+
+    <script>
+        function showContent(period) {
+            const contentTitle = document.getElementById('content-title');
+            const contentText = document.getElementById('content-text');
+            let content = '';
+            let title = '';
+
+            switch (period) {
+                case 'stone-age':
+                    title = 'Stone Age';
+                    content = 'Details about the Stone Age period...';
+                    break;
+                case 'vedic-period':
+                    title = 'Vedic Period';
+                    content = 'Information about the Vedic Period...';
+                    break;
+                case 'mauryan-dynasty':
+                    title = 'Mauryan Dynasty';
+                    content = 'Insights into the Mauryan Dynasty...';
+                    break;
+                case 'gupta-empire':
+                    title = 'Gupta Empire';
+                    content = 'Significance of the Gupta Empire...';
+                    break;
+                case 'modern-era':
+                    title = 'Modern Era';
+                    content = 'Details on the Modern Era...';
+                    break;
+                default:
+                    title = 'Select a period to explore';
+                    content = 'Click on a timeline image above to view more details about that period.';
+            }
+
+            contentTitle.innerHTML = title;
+            contentText.innerHTML = content;
+            document.getElementById('content-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

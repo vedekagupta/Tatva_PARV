@@ -1,0 +1,134 @@
+body, h1, h2, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #FAF6E3; 
+    color: #2A3663; 
+}
+
+/* Navigation bar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54473F;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    color: #FAF6E3;
+    text-shadow: 2px 2px 6px #2A3663;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FAF6E3;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #D8DBBD; 
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #dbcfbd, #B59F78);
+    color: #2A3663;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #2A3663;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #2A3663;
+}
+
+.hero-content .explore-btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #2A3663;
+    color: #FAF6E3;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .explore-btn:hover {
+    background-color: #B59F78;
+}
+
+.hero .visual img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: #FAF6E3;
+}
+
+.feature-card {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #2A3663;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #c1877f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2A3663;
+    color: #FAF6E3;
+    font-size: 0.9rem;
+}

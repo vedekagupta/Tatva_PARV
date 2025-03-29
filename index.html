@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit Heritage</title>
+    <link rel="stylesheet" href="styles.css"> 
+    
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Tatva</h1> 
+        </div>
+        <!--linked other pages on top button and named them-->
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ancient-books.html">Ancient Books</a></li>
+                <li><a href="rishis-munis.html">Rishis and Munis</a></li>
+                <li><a href="newdynasty.html">Dynasties</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="loginmain.html">Research</a></li>               
+            </ul>
+        </nav>
+        
+        <!-- Code for Multi Language using Google Translate-->
+        <div id="google_element">      
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+            <script>
+                function loadGoogleTranslate (){
+                    new google.translate.TranslateElement ("google_element");
+                }
+            </script>
+        </div>
+      
+    </header>
+
+    <main>
+        <!--hero section for the upper home page design of welcoming-->
+        <section class="hero">
+
+            <!--This division block is made for the Upper part of the page in which welcome, a small disrciption and explore button is present-->
+            <div class="hero-content">
+                <h2>Welcome to Sanskrit Heritage</h2>
+                <p>Step into the timeless world of Sanskrit, where the echoes of ancient wisdom meet the aspirations of the modern age. Our website is dedicated to preserving and promoting the rich heritage of Sanskrit—one of the oldest and most profound languages in the world.</p>
+                <p>At Sanskrit Heritage, we believe in keeping alive the treasures of this classical language, which has been a beacon of knowledge, culture, and spirituality for millennia. Whether you're a scholar, student, or simply curious, we invite you to explore the wealth of resources we offer.</p>
+                <button class="explore-btn">Explore Now</button>  
+            </div>
+            
+            <!--img inserted of UP-->
+            <div class="visual">
+                <img src="pic.jpg" alt="Sanskrit Visual">
+            </div>
+
+        </section>
+
+        <!--features represent second half of home page-->
+        <section class="features">
+            
+            <div class="feature-card">
+                <img src="visualhome.jpg" alt="Visual Home">
+                <h3>Ancient Knowledge</h3>
+                <p>Ancient knowledge, rooted in Sanskrit, offers unparalleled insights into philosophy, medicine, astronomy, and spirituality. It bridges the wisdom of the past with solutions for the present and future.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://www.shutterstock.com/image-photo/ancient-indian-mathematics-some-books-600nw-2477162623.jpg" alt="Rare Books">
+                <h3>Rare Books</h3>
+                <p>Rare manuscripts and books hold the secrets of civilizations, safeguarding invaluable teachings of Vedas, Upanishads, and ancient sciences. Each text is a gateway to the brilliance of human intellect.</p>
+            </div>
+            <div class="feature-card">
+                <img src="rishi.jpg" alt="Rishis and Munis">
+                <h3>Rishis and Munis</h3>
+                <p>The rishis and munis were enlightened seers and scholars who shaped the foundation of knowledge, ethics, and culture. Their teachings continue to inspire seekers across the globe.</p>
+            </div>
+        </section>
+    </main>
+
+    <!--Code for Chatbot linked to botpress-->
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/12/03/07/20241203071319-8SQV7SBW.js"></script>
+
+    <!--represent the ending line of website as reserved-->
+    <footer>
+        <p>&copy; 2024 Sanskrit Heritage. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
